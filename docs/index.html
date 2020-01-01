@@ -52,8 +52,10 @@
   left: -50%;
   width: 200%;
   height: 200%;
+  min-width: 100%;
+  min-height: 100%;
 }
-#bg img {
+#bgd {
   position: absolute;
   top: 0;
   left: 0;
@@ -74,8 +76,8 @@
 
 <body style="background-color: #ffb679; height: 100%; width: 100%;">
 
-  <div class="d-flex p-2 bd-highlight">
-    <video loop muted autoplay poster="img/videoframe.jpg" id="bg">
+  <div class="d-flex p-2 bd-highlight" id="bgd">
+    <video loop muted autoplay id="bg">
         <source src="images/clifford-home-page.mp4" type="video/webm">
     </video>
   </div>
