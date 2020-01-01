@@ -25,21 +25,22 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
   <style>
-    .fullscreen-bg {
-    position: fixed;
-    top: 0;
-    right: 0;
-    bottom: 0;
-    left: -75px;
-    overflow: hidden;
-    z-index: -100;
+  .fullscreen-bg {
+  left: 50%;
+  margin-left: -960px;
+  overflow: hidden;
+  z-index: -100;
 }
 
 .fullscreen-bg__video {
-    position: absolute;
-    margin: auto;
-    top: 0;
-    height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  min-height: 100%;
+  min-width: 1920px;
+  width: 100%;
+  height: auto;
+
 }
   </style>
 
@@ -52,11 +53,19 @@
 
 <body style="background-color: #ffb679; height: 100%; width: 100%;">
 
+  <div class="d-flex p-2 bd-highlight fullscreen-bg__video">
+    <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
+        <source src="images/clifford-home-page.mp4" type="video/webm">
+    </video>
+  </div>
+
+  <!--
   <div class="fullscreen-bg">
       <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
           <source src="images/clifford-home-page.mp4" type="video/webm">
       </video>
   </div>
+-->
 
   <!-- Top Navigational Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
