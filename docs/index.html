@@ -48,10 +48,10 @@
 <style>
 #bg {
   position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
+  top: -50vh;
+  left: -50vh;
+  width: 200vw;
+  height: 200vh;
 }
 #bg source {
   position: absolute;
@@ -61,7 +61,7 @@
   bottom: 0;
   margin: auto;
   min-width: 50%;
-  min-height: 100%;
+  min-height: 50%;
 }
 </style>
 
@@ -74,11 +74,14 @@
 
 <body style="background-color: #ffb679; height: 100%; width: 100%;">
 
-  <div>
-    <video loop muted autoplay id="bg">
-        <source src="images/clifford-home-page.mp4" type="video/webm" alt="">
-    </video>
-  </div>
+  <video loop muted autoplay id="bg">
+      <source src="images/clifford-home-page.mp4" type="video/webm" alt="">
+  </video>
+
+  <script type="text/javascript">
+    var bg = document.getElementById("bg");
+    //bg.style.width =
+  </script>
 
   <!--
   <div class="fullscreen-bg">
