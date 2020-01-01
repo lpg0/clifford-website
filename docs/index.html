@@ -49,19 +49,17 @@
 #bg {
   position: fixed;
   top: -50vh;
-  left: -50vh;
+  left: -50vw;
   width: 200vw;
   height: 200vh;
 }
 #bg source {
-  position: absolute;
+  display: block;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
+  min-height: 100vh;
 }
 </style>
 
@@ -78,10 +76,6 @@
       <source src="images/clifford-home-page.mp4" type="video/webm" alt="">
   </video>
 
-  <script type="text/javascript">
-    var bg = document.getElementById("bg");
-    //bg.style.width =
-  </script>
 
   <!--
   <div class="fullscreen-bg">
