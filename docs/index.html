@@ -137,6 +137,20 @@
       color: black;
     }
 
+    .btn.ghost-inverse {
+      background-color: transparent;
+      border: 3px solid white;
+      border-radius: 6px;
+      margin: 8px 4px;
+      color: white;
+      font-size: 150%
+    }
+
+    .btn.ghost-inverse:hover {
+      background-color: white;
+      color: black;
+    }
+
     .btn.transparent {
       background-color: transparent;
       border: 3px solid transparent;
@@ -241,12 +255,19 @@
   <!-- Lower Information Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="d-flex p-2 bd-highlight" style="background-color:white; height: 100%">
-    <div class="jumbotron" style="margin:12px; padding: 12px;">
+    <div class="jumbotron" style="margin:12px; padding: 24px;">
+      <iframe
+        width="20%"
+        height="20%"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQQ4N-ewMQfhmQZLnhxDyr_4vA3WKfsqE
+        &q=Space+Needle,Seattle+WA" allowfullscreen>
+      </iframe>
       <h1 class="display-4">Hello, world!</h1>
       <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
       <hr class="my-4">
       <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <a class="btn ghost-inverse" href="#" role="button">Learn more</a>
     </div>
   </div>
 
