@@ -13,147 +13,151 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <!-- FONT #e61c20
+  <!-- FONT + ICONS (Clifford red is: #e61c20)
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b720793471.js" crossorigin="anonymous"></script>
-  <!-- CSS
+
+  <!-- CSS Bootstrap
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <!--<link rel="stylesheet" href="css/normalize.css">-->
-  <!--<link rel="stylesheet" href="css/skeleton.css">-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-<style>
-body {
-  font-family: Merriweather;
-}
+  <!-- Stylesheet Customization
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <style>
 
-#bg {
-  position: fixed;
-  top: -50%;
-  left: -50%;
-  width: 200%;
-  height: 200%;
-  z-index: -1;
-}
+    body {
+      font-family: Merriweather;
+    }
 
-@media screen and (max-width: 700px) {
-  #bg {
-    position: fixed;
-    top: -50%;
-    left: -100%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-  }
-}
+    #bg {
+      position: fixed;
+      top: -50%;
+      left: -50%;
+      width: 200%;
+      height: 200%;
+      z-index: -1;
+    }
 
-@media screen and (max-width: 500px) {
-  #bg {
-    position: fixed;
-    top: -50%;
-    left: -180%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-  }
-}
+    @media screen and (max-width: 700px) {
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -100%;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+      }
+    }
 
-@media screen and (max-width: 500px) {
-  #bg {
-    position: fixed;
-    top: -50%;
-    left: -180%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-  }
-}
+    @media screen and (max-width: 500px) {
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -180%;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+      }
+    }
 
-@media screen and (max-width: 380px) {
-  #bg {
-    position: fixed;
-    top: -50%;
-    left: -210%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-  }
-}
+    @media screen and (max-width: 500px) {
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -180%;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+      }
+    }
 
-@media screen and (max-width: 280px) {
-  #bg {
-    position: fixed;
-    top: -50%;
-    left: -320%;
-    width: 200%;
-    height: 200%;
-    z-index: -1;
-  }
-}
+    @media screen and (max-width: 380px) {
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -210%;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+      }
+    }
 
-#bg img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  margin: auto;
-  min-width: 50%;
-  min-height: 50%;
-}
-.btn {
-  background-color: white;
-  color: black;
-  border: 3px solid transparent;
-  border-radius: 6px;
-  margin: 8px 4px;
-  font-weight: 700;
-  font-size: 150%;
-  transition: 0.2s;
-}
+    @media screen and (max-width: 280px) {
+      #bg {
+        position: fixed;
+        top: -50%;
+        left: -320%;
+        width: 200%;
+        height: 200%;
+        z-index: -1;
+      }
+    }
 
-.btn.ghost {
-  background-color: transparent;
-  border: 3px solid white;
-  border-radius: 6px;
-  margin: 8px 4px;
-  color: white;
-  font-size: 150%
-}
+    #bg img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto;
+      min-width: 50%;
+      min-height: 50%;
+    }
 
-.btn.ghost:hover {
-  background-color: white;
-  color: black;
-}
+    .btn {
+      background-color: white;
+      color: black;
+      border: 3px solid transparent;
+      border-radius: 6px;
+      margin: 8px 4px;
+      font-weight: 700;
+      font-size: 150%;
+      transition: 0.2s;
+    }
 
-.btn.transparent {
-  background-color: transparent;
-  border: 3px solid transparent;
-  border-radius: 6px;
-  margin: 8px 4px;
-  color: white;
-  font-size: 150%
-}
+    .btn.ghost {
+      background-color: transparent;
+      border: 3px solid white;
+      border-radius: 6px;
+      margin: 8px 4px;
+      color: white;
+      font-size: 150%
+    }
 
-nav button i {
-  padding: 5px 6px;
-  transition: 0.2s;
-  border-radius: 3px
-}
+    .btn.ghost:hover {
+      background-color: white;
+      color: black;
+    }
 
-nav .navbar-brand {
-  font-size: 200%;
-  color:white;
-}
+    .btn.transparent {
+      background-color: transparent;
+      border: 3px solid transparent;
+      border-radius: 6px;
+      margin: 8px 4px;
+      color: white;
+      font-size: 150%
+    }
 
-.btn.transparent:hover, nav button:hover i {
-  background-color: rgba(0, 0, 0, 0.4);
-  color: white;
-}
+    nav button i {
+      padding: 5px 6px;
+      transition: 0.2s;
+      border-radius: 3px
+    }
 
-</style>
-<!-- Favicon
+    nav .navbar-brand {
+      font-size: 200%;
+      color:white;
+    }
+
+    .btn.transparent:hover, nav button:hover i {
+      background-color: rgba(0, 0, 0, 0.4);
+      color: white;
+    }
+
+  </style>
+
+  <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="file:///C:/clifford-website/docs/images/favicon.png">
 
@@ -162,20 +166,15 @@ nav .navbar-brand {
 
 <body style="background-color: white; height: 100%; width: 100%;">
 
-<div id="bg" style="background-image: url('images/Capture.png'); background-size: cover;">
-  <video loop muted autoplay playsinline alt="">
+  <!-- Background Video
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div id="bg" style="background-image: url('images/Capture.png'); background-size: cover;">
+    <video loop muted autoplay playsinline alt="">
       <source src="images/clifford-home-page.mp4" type="video/mp4">
-  </video>
-</div>
-
-
-  <!--
-  <div class="fullscreen-bg">
-      <video loop muted autoplay poster="img/videoframe.jpg" class="fullscreen-bg__video">
-          <source src="images/clifford-home-page.mp4" type="video/webm">
-      </video>
+    </video>
   </div>
--->
+
+
 
   <!-- Top Navigational Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -201,7 +200,6 @@ nav .navbar-brand {
 
 
 
-
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="container" style="height: 100%">
@@ -213,6 +211,8 @@ nav .navbar-brand {
       </div>
     </div>
   </div>
+
+
 
   <!-- Middle Navigational Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -229,13 +229,13 @@ nav .navbar-brand {
     </div>
   </nav>
 
+
+
   <!-- Lower Information Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="d-flex p-2 bd-highlight" style="background-color:white;">I'm a flexbox container!
   </div>
 
-  <!-- Primary Page Layout
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
 
   <!-- End Document
