@@ -15,37 +15,19 @@
 
   <!-- FONT #e61c20
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <link href="https://fonts.googleapis.com/css?family=Merriweather|Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b720793471.js" crossorigin="anonymous"></script>
-
   <!-- CSS
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <!--<link rel="stylesheet" href="css/normalize.css">-->
   <!--<link rel="stylesheet" href="css/skeleton.css">-->
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
-  <!--<style>
-  .fullscreen-bg {
-  left: 50%;
-  margin-left: -960px;
-  max-width: 1920px;
-  overflow: hidden;
-  z-index: -100;
-}
-
-.fullscreen-bg__video {
-  position: fixed;
-  top: 0;
-  left: 0;
-  min-height: 100%;
-  min-width: 1920px;
-  width: 100%;
-  height: auto;
-
-}
-</style>-->
-
 <style>
+body {
+  font-family: Merriweather;
+}
+
 #bg {
   position: fixed;
   top: -50vh;
@@ -53,17 +35,75 @@
   width: 200vw;
   height: 200vh;
 }
-#bg source {
-  display: block;
+
+@media screen and (max-width: 700px) {
+  #bg {
+    position: fixed;
+    top: -50vh;
+    left: -80vw;
+    width: 200vw;
+    height: 200vh;
+  }
+}
+
+#bg video {
+  position: absolute;
   top: 0;
   left: 0;
   right: 0;
   bottom: 0;
-  min-height: 100vh;
+  margin: auto;
+  min-width: 50%;
+  min-height: 50%;
 }
-</style>
 
-  <!-- Favicon
+.btn {
+  background-color: white;
+  color: black;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  margin: 8px 4px;
+  font-weight: 700;
+  font-size: 150%;
+  transition: 0.2s;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 6px;
+  margin: 8px 4px;
+  color: white;
+  font-size: 150%
+}
+
+.btn.ghost:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn.transparent {
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  margin: 8px 4px;
+  color: white;
+  font-size: 150%
+}
+
+nav button i {
+  padding: 5px 6px;
+  transition: 0.2s;
+  border-radius: 3px
+}
+
+.btn.transparent:hover, nav button:hover i {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+</style>
+<!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link rel="icon" type="image/png" href="file:///C:/clifford-website/docs/images/favicon.png">
 
@@ -72,9 +112,11 @@
 
 <body style="background-color: #ffb679; height: 100%; width: 100%;">
 
-  <video loop muted autoplay id="bg">
-      <source src="images/clifford-home-page.mp4" type="video/webm" alt="">
+<div id="bg">
+  <video loop muted autoplay alt="">
+      <source src="images/clifford-home-page.mp4" type="video/webm">
   </video>
+</div>
 
 
   <!--
@@ -87,21 +129,21 @@
 
   <!-- Top Navigational Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent">
-    <a class="navbar-brand" href="file:///C:/clifford-website/docs/index.html#" style="font-family: Merriweather; font-size: 200%; margin-left: 4px; padding-left: 12px; color:white;">Clifford</a>
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent" style="background-color: rgba(0, 0, 0, 0.4); ">
+    <a class="navbar-brand" href="index.html" style="font-family: Merriweather; font-size: 200%; margin-left: 4px; padding-left: 12px; color:white;">Clifford</a>
     <button style="border-style: none; outline: 0; margin-right: 4px; padding-right: 12px;" class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <i style="color: white; font-size: 125%"class="fas fa-bars"></i>
     </button>
     <div class="navbar-collapse justify-content-end collapse" id="navbarNavDropdown" style="text-align: center;">
       <ul class="navbar-nav" style="margin-right: 4px; padding-right: 12px;">
         <li class="nav-item active">
-          <a class="nav-link" href="file:///C:/clifford-website/docs/index.html#" style="font-family: Merriweather Black; padding-left: 20px; padding-right: 20px;color:white;">Technology<span class="sr-only">(current)</span></a>
+          <a class="nav-link" href="#" style="font-family: Merriweather; font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Technology<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="file:///C:/clifford-website/docs/index.html#" style="font-family: Merriweather Black; padding-left: 20px; padding-right: 20px;color:white;">Careers</a>
+          <a class="nav-link" href="#" style="font-family: Merriweather; font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Careers</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="file:///C:/clifford-website/docs/index.html#" style="font-family: Merriweather Black; padding-left: 20px; padding-right: 20px; color:white;">Connect</a>
+          <a class="nav-link" href="javacript:void(0);" style="font-family: Merriweather; font-weight: 700; padding-left: 20px; padding-right: 20px; color:white;">Connect</a>
         </li>
       </ul>
     </div>
@@ -128,10 +170,10 @@
     <div class="collapse navbar-collapse show" id="navbarCollapse">
       <ul class="navbar-nav mr-auto text-center">
         <li class="nav-item active">
-          <button type="button" style="background-color: transparent; border-width: 5px; border-color: transparent; border-radius: 0; margin-bottom: 8px; margin-top: 8px; margin-left: 4px; margin-right: 4px; font-family: Merriweather Black;color: white; font-size: 150%" class="btn btn-primary">Startup</button>
+          <button class="btn transparent" type="button">Startup</button>
         </li>
         <li class="nav-item active">
-          <button type="button" style="background-color: transparent; border-width: 5px; border-color: white; border-radius: 0; margin-bottom: 8px; margin-top: 8px; margin-left: 4px; margin-right: 4px; font-family: Merriweather Black; color: white; font-size: 150%" class="btn btn-primary">Apply</button>
+          <button class="btn ghost" type="button">Apply</button>
         </li>
       </ul>
     </div>
