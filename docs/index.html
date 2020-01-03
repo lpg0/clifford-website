@@ -164,6 +164,10 @@
       min-height: 50%;
     }
 
+    button {
+      outline: none;
+    }
+
     .btn {
       background-color: white;
       color: black;
@@ -201,6 +205,20 @@
     .btn.ghost-inverse:hover {
       background-color: #444444;
       color: white;
+    }
+
+    .btn.ghost-inverse-gray {
+      background-color: transparent;
+      border: 3px solid #eeeeee;
+      border-radius: 6px;
+      margin: 8px 4px;
+      color: #eeeeee;
+      font-size: 150%
+    }
+
+    .btn.ghost-inverse-gray:hover {
+      background-color: #eeeeee;
+      color: black;
     }
 
     .btn.transparent {
@@ -303,20 +321,25 @@
   </nav>
 
 
+  <!-- Lower Information Section 1
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:white; min-height: 60%;">
+    <div class="jumbotron" style="position: relative; background-color: #444444; margin:12px; padding: 24px; min-height: 60%;">
+
+      <h1 style="margin-top: 12px; color: #eeeeee;"class="display-4">Startup</h1>
+      <p class="lead" style="color:white;">Clifford is a scalable mobile gig-economy solution - designed for the dreamers of the next generation</p>
+      <hr style="border-top: 1px solid #ff5d4a" class="my-4">
+      <p style="color:white;">What began as a humble research project soon became a tremendous venture. Clifford seeks to redefine the peer-to-peer interaction system.</p>
+      <a style="margin-bottom: 40px;" class="btn ghost-inverse-gray" role="button" href="https://news.darden.virginia.edu/2016/07/22/entrepreneur-ranking-four/">Learn more</a>
+    </div>
+  </div>
+
+
 
   <!-- Lower Information Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:white;">
     <div class="jumbotron" style="position: relative; background-color: #eeeeee; margin:12px; padding: 24px;">
-      <!--
-      <iframe
-        width="100%"
-        height="30%"
-        frameborder="0" style="border:0"
-        src="https://www.google.com/maps/embed/v1/place?key=AIzaSyBQQ4N-ewMQfhmQZLnhxDyr_4vA3WKfsqE
-        &q=Charlottesville+VA" allowfullscreen>
-      </iframe>
-      -->
       <div id="map"></div>
       <script>
       function initMap() {
@@ -411,11 +434,16 @@
       <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBQQ4N-ewMQfhmQZLnhxDyr_4vA3WKfsqE&callback=initMap"
       async defer></script>
       <h1 style="margin-top: 12px; "class="display-4">Charlottesville, Virginia</h1>
-      <p class="lead" style=""><i>Entrepreneur</i> ranked this city 4th in the Nation for entrepreneurs.</p>
-      <hr class="my-4">
+      <p class="lead"><i>Entrepreneur</i> ranked this city 4th in the Nation for entrepreneurs</p>
+      <hr style="border-top: 1px solid #ab0000;" class="my-4">
       <p>Home to the University of Virginia - with top rated business and science schools, Charlottesville is a dream startup location.</p>
-      <a style="margin-bottom: 40px;" class="btn ghost-inverse" role="button" href="https://news.darden.virginia.edu/2016/07/22/entrepreneur-ranking-four/">Learn more</a>
+      <a style="margin-bottom: 40px;" class="btn ghost-inverse" role="button" target="_blank" href="https://news.darden.virginia.edu/2016/07/22/entrepreneur-ranking-four/">Learn more</a>
     </div>
+  </div>
+
+
+  <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:#444444; min-height: 25%;">
+    <img style="margin:24px" width="auto" height="75px" src="images/clifford-flag-eeeeee.png" alt="United States of America">
   </div>
 
 
