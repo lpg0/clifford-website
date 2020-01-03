@@ -57,12 +57,44 @@
       z-index: -1;
     }
 
-    @media screen and (max-width: 1070px) {
-      h1 {
+    .d-flex {
+      min-height: 100%;
+    }
+    .jumbotron {
+      min-height: 100%;
+    }
+
+
+    @media screen and (max-width: 765px) {
+      .d-flex {
+        min-height: 110%;
+      }
+      .jumbotron {
+        min-height: 110%;
+      }
+    }
+
+    @media screen and (max-width: 535px) {
+      .display-4 {
         font-size: 25px;
       }
       .lead {
         font-size: 15px;
+      }
+      .d-flex {
+        min-height: 100%;
+      }
+      .jumbotron {
+        min-height: 100%;
+      }
+    }
+    
+    @media screen and (max-width: 375px) {
+      .d-flex {
+        min-height: 110%;
+      }
+      .jumbotron {
+        min-height: 110%;
       }
     }
 
@@ -274,8 +306,8 @@
 
   <!-- Lower Information Section
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:white; min-height: 120%">
-    <div class="jumbotron" style="position: relative; background-color: #eeeeee; margin:12px; padding: 24px; min-height: 120%;">
+  <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:white;">
+    <div class="jumbotron" style="position: relative; background-color: #eeeeee; margin:12px; padding: 24px;">
       <!--
       <iframe
         width="100%"
