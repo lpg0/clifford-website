@@ -8,7 +8,7 @@
   <!-- Basic Page Needs
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
 
-  <title>Clifford</title>
+  <title>Careers - Clifford</title>
   <meta name="description" content="">
   <meta name="author" content="">
 
@@ -20,6 +20,7 @@
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
   <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,700,900|Open+Sans:300,400,600,700,800&display=swap" rel="stylesheet">
   <script src="https://kit.fontawesome.com/b720793471.js" crossorigin="anonymous"></script>
+  <script src="../ripples.js"></script>
 
   <!-- CSS Bootstrap
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -27,226 +28,7 @@
 
   <!-- Stylesheet Customization
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <style>
-
-    body {
-      font-family: Open Sans;
-      background-color: white;
-      height: 100%;
-      width: 100%;
-    }
-
-    nav, a, h1 {
-      font-family: Merriweather;
-    }
-
-    h1 {
-      color: #444444
-    }
-
-    #map {
-      min-height: 30%;
-      min-width: 100%;
-    }
-
-    #bg {
-      position: fixed;
-      top: -50%;
-      left: -50%;
-      width: 200%;
-      height: 200%;
-      z-index: -1;
-    }
-
-    .d-flex {
-      min-height: 100%;
-    }
-    .jumbotron {
-      min-height: 100%;
-      max-width: 600px;
-      margin: auto !important;
-    }
-
-
-    @media screen and (max-width: 765px) {
-      .d-flex {
-        min-height: 120%;
-      }
-      .jumbotron {
-        min-height: 120%;
-      }
-    }
-
-    @media screen and (max-width: 535px) {
-      .display-4 {
-        font-size: 25px;
-      }
-      .lead {
-        font-size: 15px;
-      }
-      .d-flex {
-        min-height: 100%;
-      }
-      .jumbotron {
-        min-height: 100%;
-      }
-    }
-
-    @media screen and (max-width: 375px) {
-      .d-flex {
-        min-height: 110%;
-      }
-      .jumbotron {
-        min-height: 110%;
-      }
-    }
-
-    @media screen and (max-width: 700px) {
-      #bg {
-        position: fixed;
-        top: -50%;
-        left: -100%;
-        width: 200%;
-        height: 200%;
-        z-index: -1;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      #bg {
-        position: fixed;
-        top: -50%;
-        left: -180%;
-        width: 200%;
-        height: 200%;
-        z-index: -1;
-      }
-    }
-
-    @media screen and (max-width: 500px) {
-      #bg {
-        position: fixed;
-        top: -50%;
-        left: -180%;
-        width: 200%;
-        height: 200%;
-        z-index: -1;
-      }
-    }
-
-    @media screen and (max-width: 380px) {
-      #bg {
-        position: fixed;
-        top: -50%;
-        left: -210%;
-        width: 200%;
-        height: 200%;
-        z-index: -1;
-      }
-    }
-
-    @media screen and (max-width: 280px) {
-      #bg {
-        position: fixed;
-        top: -50%;
-        left: -320%;
-        width: 200%;
-        height: 200%;
-        z-index: -1;
-      }
-    }
-
-    #bg img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      right: 0;
-      bottom: 0;
-      margin: auto;
-      min-width: 50%;
-      min-height: 50%;
-    }
-
-    button {
-      outline: none;
-    }
-
-    .btn {
-      background-color: white;
-      color: black;
-      border: 3px solid transparent;
-      border-radius: 6px;
-      margin: 8px 0px;
-      font-weight: 700;
-      font-size: 150%;
-      transition: 0.2s;
-    }
-
-    .btn.ghost {
-      background-color: transparent;
-      border: 3px solid white;
-      border-radius: 6px;
-      color: white;
-      font-size: 150%
-    }
-
-    .btn.ghost:hover {
-      background-color: white;
-      color: black;
-    }
-
-    .btn.ghost-inverse {
-      background-color: transparent;
-      border: 3px solid #444444;
-      border-radius: 6px;
-      color: #444444;
-      font-size: 150%
-    }
-
-    .btn.ghost-inverse:hover {
-      background-color: #444444;
-      color: white;
-    }
-
-    .btn.ghost-inverse-gray {
-      background-color: transparent;
-      border: 3px solid #eeeeee;
-      border-radius: 6px;
-      color: #eeeeee;
-      font-size: 150%
-    }
-
-    .btn.ghost-inverse-gray:hover {
-      background-color: #eeeeee;
-      color: black;
-    }
-
-    .btn.transparent {
-      background-color: transparent;
-      border: 3px solid transparent;
-      border-radius: 6px;
-      margin: 8px 4px;
-      color: white;
-      font-size: 150%
-    }
-
-    nav button i {
-      padding: 5px 6px;
-      transition: 0.2s;
-      border-radius: 3px
-    }
-
-    nav .navbar-brand {
-      font-size: 200%;
-      color:white;
-    }
-
-    .btn.transparent:hover, nav button:hover i {
-      background-color: rgba(0, 0, 0, 0.4);
-      color: white;
-    }
-
-  </style>
+  <link rel="stylesheet" href="../css/compiled.css">
 
   <!-- Favicon
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
@@ -255,21 +37,16 @@
 </head>
 
 
-<body >
+<body>
 
-  <!-- Background Video
-  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div id="bg" style="background-image: url('../images/Capture.png'); background-size: cover;">
-    <video loop muted autoplay playsinline alt="">
-      <source src="../images/clifford-home-page.mp4" type="video/mp4">
-    </video>
+  <div style="position: absolute; height: 100%; width: 100%; top: 0;">
+
   </div>
-
 
 
   <!-- Top Navigational Bar
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent" style="background-color: rgba(0, 0, 0, 0.4); ">
+  <nav class="navbar fixed-top navbar-expand-lg navbar-dark transparent">
     <a class="navbar-brand" href="../index.html">Clifford</a>
     <button style="border-style: none; outline: 0; margin-right: 4px; padding-right: 12px;" class="navbar-toggler collapsed " type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
       <i style="color: white; font-size: 125%"class="fas fa-bars"></i>
@@ -277,13 +54,13 @@
     <div class="navbar-collapse justify-content-end collapse" id="navbarNavDropdown" style="text-align: center;">
       <ul class="navbar-nav" style="margin-right: 4px; padding-right: 12px;">
         <li class="nav-item active">
-          <a class="nav-link" href="technology.html" style="font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Technology<span class="sr-only">(current)</span></a>
+          <a class="nav-link ripple" href="technology.html" style="font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Technology<span class="sr-only">(current)</span></a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="#" style="font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Careers</a>
+          <a class="nav-link ripple" href="careers.html" style="font-weight: 700; padding-left: 20px; padding-right: 20px;color:white;">Careers</a>
         </li>
         <li class="nav-item active">
-          <a class="nav-link" href="connect.html" style="font-weight: 700; padding-left: 20px; padding-right: 20px; color:white;">Connect</a>
+          <a class="nav-link ripple" href="connect.html" style="font-weight: 700; padding-left: 20px; padding-right: 20px; color:white;">Connect</a>
         </li>
       </ul>
     </div>
@@ -293,7 +70,7 @@
 
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="height: 30%">
+  <div class="container" style="height: 5%; margin-top: 74px;">
     <div class="row">
       <div class="one-half column" >
         <!--<h4 style="font-family: Merriweather">Basic Page</h4>
@@ -321,8 +98,8 @@
 
 
 
-  <div class="d-flex p-2 bd-highlight" style="position: relative; background-color:#444444; min-height: 25%;">
-    <img style="margin:24px" width="auto" height="75px" src="../images/clifford-flag-eeeeee.png" alt="United States of America">
+  <div class="bd-highlight" style="bottom: 0; position: absolute; width: 100%; background-color:#444444; min-height: 25%;">
+    <img style="margin:3%; width: 200px; max-width: 94%;" src="../images/clifford-flag-eeeeee.png" alt="United States of America">
   </div>
 
 

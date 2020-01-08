@@ -1,0 +1,248 @@
+.ripple {
+  position: relative;
+  cursor: pointer;
+  overflow: hidden;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-tap-highlight-color: transparent;
+  vertical-align: middle;
+  z-index: 1;
+  will-change: opacity, transform;
+  -webkit-transition: all 0.3s ease-out;
+  -moz-transition: all 0.3s ease-out;
+  -o-transition: all 0.3s ease-out;
+  -ms-transition: all 0.3s ease-out;
+  transition: all 0.3s ease-out;
+}
+
+.ripple .ripple-effect {
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  margin-top: -10px;
+  margin-left: -10px;
+  opacity: 0;
+  background: rgba(0, 0, 0, 0.2);
+  -webkit-transition: all 0.7s ease-out;
+  -moz-transition: all 0.7s ease-out;
+  -o-transition: all 0.7s ease-out;
+  -ms-transition: all 0.7s ease-out;
+  transition: all 0.7s ease-out;
+  -webkit-transition-property: -webkit-transform, opacity;
+  -moz-transition-property: -moz-transform, opacity;
+  -o-transition-property: -o-transform, opacity;
+  transition-property: transform, opacity;
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  transform: scale(0);
+  pointer-events: none;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Open Sans";
+  background-color: white;
+}
+
+nav, a, h1 {
+  font-family: Merriweather;
+}
+
+h1 {
+  color: #444444;
+}
+
+#bg {
+  position: fixed;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200vh;
+  z-index: -1;
+}
+
+.jumbotron {
+  max-width: 1000px;
+  margin: 2% auto !important;
+  width: 100%;
+  padding-bottom: 1% !important;
+}
+
+@media screen and (max-width: 535px) {
+  .display-4 {
+    font-size: 25px;
+  }
+
+  .lead {
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 700px) {
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -100%;
+    width: 200%;
+    height: 200vh;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -180%;
+    width: 200%;
+    height: 200vh;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 500px) {
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -180%;
+    width: 200%;
+    height: 200vh;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 380px) {
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -210%;
+    width: 200%;
+    height: 200vh;
+    z-index: -1;
+  }
+}
+@media screen and (max-width: 280px) {
+  #bg {
+    position: fixed;
+    top: -50%;
+    left: -320%;
+    width: 200%;
+    height: 200vh;
+    z-index: -1;
+  }
+}
+#bg video {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  margin: auto;
+  min-width: 50%;
+  min-height: 60%;
+}
+
+.btn {
+  background-color: white;
+  color: black;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  margin: 8px 0px;
+  font-weight: 700;
+  font-size: 150%;
+  transition: 0.2s;
+}
+
+.btn.ghost.red {
+  background-color: transparent;
+  color: white;
+  border: 3px solid #ff5d4a;
+}
+
+.btn.ghost.red:hover {
+  background-color: rgba(0, 0, 0, 0.15);
+  color: white;
+  border: 3px solid white;
+}
+
+.btn.ghost {
+  background-color: transparent;
+  border: 3px solid white;
+  border-radius: 6px;
+  color: white;
+  font-size: 150%;
+}
+
+.btn.ghost:hover {
+  background-color: white;
+  color: black;
+}
+
+.btn.ghost-inverse {
+  background-color: transparent;
+  border: 3px solid #444444;
+  border-radius: 6px;
+  color: #444444;
+  font-size: 150%;
+}
+
+.btn.ghost-inverse:hover {
+  background-color: #444444;
+  color: white;
+}
+
+.btn.ghost-inverse-gray {
+  background-color: transparent;
+  border: 3px solid #eeeeee;
+  border-radius: 6px;
+  color: #eeeeee;
+  font-size: 150%;
+}
+
+.btn.ghost-inverse-gray:hover {
+  background-color: #eeeeee;
+  color: black;
+}
+
+.btn.transparent {
+  background-color: transparent;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  margin: 8px 4px;
+  color: white;
+  font-size: 150%;
+}
+
+.navbar.fixed-top {
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+nav button i {
+  padding: 5px 6px;
+  transition: 0.2s;
+  border-radius: 3px;
+}
+
+nav .navbar-brand {
+  font-size: 200%;
+  color: white;
+}
+
+a.navbar-brand, a.nav-link {
+  transition: 150ms;
+}
+
+a.nav-link:hover, a.navbar-brand:hover {
+  color: #e61c20 !important;
+}
+
+.btn.transparent:hover, nav button:hover i {
+  background-color: rgba(0, 0, 0, 0.4);
+  color: white;
+}
+
+/*# sourceMappingURL=compiled.css.map */
