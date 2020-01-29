@@ -77,9 +77,24 @@
 
 
 
+  <style media="screen">
+    @media screen and (max-width: 700px) {
+      .video-text {
+        font-size: 3em !important;
+      }
+    }
+
+    @media screen and (max-width: 260px) {
+      .video-text {
+        font-size: 1em !important;
+      }
+    }
+  </style>
+
   <!-- Primary Page Layout
   –––––––––––––––––––––––––––––––––––––––––––––––––– -->
-  <div class="container" style="height: 100%;">
+  <div class="container" style="height: 100%; margin: 0;">
+    <h1 class="video-text" style="font-size: 6em; text-align: left; color: white; margin: 70px 3%; padding: 30% 0; width: 70%; max-width: 800px;">The gig-economy for us.</h1>
   </div>
 
 
@@ -90,10 +105,10 @@
     <div class="collapse navbar-collapse show" id="navbarCollapse">
       <ul class="navbar-nav mr-auto text-center">
         <li class="nav-item active">
-          <a class="btn transparent ripple" type="button" href="#startup">Startup</a>
+          <a class="btn transparent ripple" href="#startup">Startup</a>
         </li>
         <li class="nav-item active">
-          <a class="btn ghost ripple" type="button" href="#apply">Apply</a>
+          <a class="btn ghost ripple" href="#apply">Apply</a>
         </li>
       </ul>
     </div>

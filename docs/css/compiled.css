@@ -157,6 +157,22 @@ h1 {
   transition: 0.2s;
 }
 
+.btn.btn-red {
+  background-color: #e61c20;
+  color: white;
+  border: 3px solid transparent;
+  border-radius: 6px;
+  margin: 8px 0px;
+  font-weight: 700;
+  font-size: 150%;
+  transition: 0.2s;
+}
+
+.btn.btn-red:hover {
+  background-color: #ab0000;
+  color: white;
+}
+
 .btn.ghost.red {
   background-color: transparent;
   color: white;
